@@ -72,14 +72,7 @@ void checkResult(float *hostRef, float *gpuRef, const int N)
 __global__ void sumMatrixGPU(float *MatA, float *MatB, float *MatC, int nx,
                              int ny)
 {
-    unsigned int ix = threadIdx.x + blockIdx.x * blockDim.x;
-    unsigned int iy = threadIdx.y + blockIdx.y * blockDim.y;
-    unsigned int idx = iy * nx + ix;
-
-    if (ix < nx && iy < ny)
-    {
-        MatC[idx] = MatA[idx] + MatB[idx];
-    }
+    
 }
 
 int main(int argc, char **argv)
