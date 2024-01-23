@@ -72,7 +72,13 @@ void checkResult(float *hostRef, float *gpuRef, const int N)
 __global__ void sumMatrixGPU(float *MatA, float *MatB, float *MatC, int nx,
                              int ny)
 {
-    
+
+
+
+//Write your code here
+
+
+
 }
 
 int main(int argc, char **argv)
